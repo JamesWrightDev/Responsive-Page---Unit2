@@ -1,8 +1,71 @@
 
 
 
-body {
 
-	background-color: red;
+body {
+	font-family: arial;
+	background-color: #f7f7f7;
+	margin: 0;
+
 }
 
+
+p {  }
+
+/*Styles*/
+
+li {
+	list-style-type: none;
+	display: inline;
+	float-right;
+}
+nav{
+	display: inline;
+}
+
+
+
+/*Layout Styles*/
+
+header {
+	width:90%;
+	margin: auto;
+	max-width:1024px;
+}
+
+#navbar {	
+	float: right;
+}	
+
+.primary-content, .secondary-content {
+	margin: auto;
+	text-align: center;
+	
+}
+
+.primary-content {
+	background-color: white;
+	margin: 12px;
+}
+
+.portfolio {
+	max-width: 1024px;
+	width:90%;	 
+	margin: auto;
+	text-align: center;
+	
+
+}
+
+.portfolio-section {
+	display: inline-block;
+
+
+
+}
+
+.portfolio-section img {
+	width: 300px;
+	padding: 0px 30px 30px 0;
+	
+}
