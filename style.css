@@ -18,10 +18,24 @@ li {
 	list-style-type: none;
 	display: inline;
 	float-right;
+	border: red solid 2px;
 }
 nav{
 	display: inline;
 }
+
+.title {
+	width: 40%;
+	list-style-type: none;
+	display: inline;
+}
+ul{
+	padding-right:10px;
+	float: right;
+	border: solid black 1px;
+	text-align: right;
+}
+
 
 
 
@@ -33,9 +47,36 @@ header {
 	max-width:1024px;
 }
 
-#navbar {	
+.title {
+	width: 40%;
+	display: inline;
+}
+
+ul{
+	padding-right 10px;
 	float: right;
-}	
+}
+
+.bio, .profile-pic
+ {
+	width:46.5%;
+	height: auto;
+
+	}
+
+.profile-p {
+	float: right;
+	margin-top:10px;
+	width: 50%;
+
+}
+
+.bio {
+	float: left;
+}
+
+/*Primary content*/
+
 
 .primary-content, .secondary-content {
 	margin: auto;
@@ -62,10 +103,24 @@ header {
 
 
 
+
+
+
+
 }
 
 .portfolio-section img {
 	width: 300px;
 	padding: 0px 30px 30px 0;
 	
+}
+
+
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
