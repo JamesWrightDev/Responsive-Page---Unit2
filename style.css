@@ -47,6 +47,20 @@ header {
 	max-width:1024px;
 }
 
+/*Footer*/
+
+.secondary-content {
+	max-width: 1024px;
+}
+.contact {
+	padding: 50px 0 50px;
+}
+footer {
+	border-top: solid darkgrey 1px;
+	max-width: 1024px;
+	margin: auto;
+}
+
 .title {
 	width: 40%;
 	display: inline;
