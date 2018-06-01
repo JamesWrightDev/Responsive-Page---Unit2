@@ -38,6 +38,25 @@ body {
 }
 a {
 	text-decoration: none;
+
+}
+
+li a:hover {
+color: darkgrey;
+border-bottom: solid 2px darkgrey;
+
+}
+
+
+
+h1 {
+	font-family: 'Roboto',arial, sans-serif;
+	font-weight: 100;
+}
+
+
+.footer-title a {
+	color: black;
 }
 /* ---- Footer Styles ---- */
 
@@ -55,7 +74,12 @@ a {
 }
 #backtotop {
 	float: right;
+	color: black;
 }
+
+
+
+
 .footer-nav {
 	display: none
 }
