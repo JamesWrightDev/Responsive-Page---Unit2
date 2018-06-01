@@ -1,140 +1,312 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
 
-
-
-
-body {
-	font-family: arial;
-	background-color: #f7f7f7;
-	margin: 0;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
+body{
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	margin: 0 auto;
+	line-height: 1.6;
+}
 
-p {  }
+.wrapper {
+	background-color: #f4f4f4;
+	width: 100%;
+}
+.main-header{
+	
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
 
-/*Styles*/
+.main-nav li {
+	background-color: white;
+	margin: 0.5em;
+	padding: 0.5em 0 1em;
+	font-weight: 600;
+	
+}
 
-li {
+.main-nav {
 	list-style-type: none;
-	display: inline;
-	float-right;
-	border: red solid 2px;
-}
-nav{
-	display: inline;
 }
 
-.title {
-	width: 40%;
-	list-style-type: none;
-	display: inline;
-}
-ul{
-	padding-right:10px;
-	float: right;
-	border: solid black 1px;
-	text-align: right;
+.bio{
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-
-
-
-/*Layout Styles*/
-
-header {
-	width:90%;
-	margin: auto;
-	max-width:1024px;
-}
-
-/*Footer*/
-
-.secondary-content {
-	max-width: 1024px;
-}
-.contact {
-	padding: 50px 0 50px;
-}
-footer {
-	border-top: solid darkgrey 1px;
-	max-width: 1024px;
-	margin: auto;
-}
-
-.title {
-	width: 40%;
-	display: inline;
-}
-
-ul{
-	padding-right 10px;
-	float: right;
-}
-
-.bio, .profile-pic
- {
-	width:46.5%;
-	height: auto;
-
-	}
-
-.profile-p {
-	float: right;
-	margin-top:10px;
+.profile-pic {
 	width: 50%;
 
 }
 
+a {
+	text-decoration: none;
+}
+
+/* ---- Footer Styles ---- */
+
+.secondary-content{
+	background-color:#f4f4f4 ;
+	padding: 5em 0;
+}
+
+.secondary-content h3 + p  {
+	margin: 1em 0;
+}
+
+#footer-title,
+#backtotop{
+	display: inline-block;
+	width: 50%:;
+	margin: 20px;
+}
+
+#backtotop {
+	float: right;
+}
+
+.footer-nav{
+	display: none
+}
+
+
+/* ================================= 
+  Base layouts Layouts
+==================================== */
+/* ---- Navigation ---- */
+.name {
+
+	margin:0;
+}
+
+.name,
+.main-nav {
+	display: block;
+	text-align:center;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: black;
+	text-transform: uppercase;
+}
+
+
+
+img {
+
+	max-width: 99%;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.profile-d {
+	margin: 0 1em 0;
+}
+
+#portfolio-title {
+	margin-bottom: 2em;
+}
+
 .bio {
-	float: left;
-}
 
-/*Primary content*/
-
-
-.primary-content, .secondary-content {
-	margin: auto;
-	text-align: center;
-	
-}
-
-.primary-content {
-	background-color: white;
-	margin: 12px;
-}
-
-.portfolio {
-	max-width: 1024px;
-	width:90%;	 
-	margin: auto;
-	text-align: center;
-	
+text-align: center;
+margin-bottom: 3em;
 
 }
 
 .portfolio-section {
-	display: inline-block;
-
-
-
-
-
-
+	margin-bottom: 3em;
 
 }
 
-.portfolio-section img {
-	width: 300px;
-	padding: 0px 30px 30px 0;
+.portfolio-section h3 {
+	margin: 1em 0;
+}
+
+.primary-content {
+	width:90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.secondary-content {
+	text-align: center;
+}
+
+.secondary-content h3 + p {
+	margin: 1em 2em;
+}
+
+
+footer {
+	border-top: solid 1px darkgrey;
+		padding-top: 30px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width:768px) {
+
+	.main-nav li {
+		display: inline-block;
+		background-color: transparent;
+	}
+
+	.bio {
+	 width:80%;
+	 margin: 0 auto;	
+
+
+	}
+	
+	
+	.profile-pic {
+		float: right;
+		width: 300px;
+	}
+
+	.profile-d {
+		width: 40%;
+		margin: 0;
+		float: right;
+		margin-right: 2em;
+		text-align: left;
+	}
+
+	.primary-content {
+		margin-top: 5em;
+	}
+
+	
+	.portfolio-section img {
+		max-width: 300px;
+		display: inline-block;
+
+	}
+	.portfolio-section {
+		width: 40%;
+		display: inline-block;
+		margin: 1em;
+		vertical-align: top;
+	}
+
+	#backtotop {
+		display: none;	
+	}	
+
+	
+	footer {
+		width: 80%;
+		margin: 0 auto;
+
+
+	}
+
+	.footer-title {
+		margin-top
+	}
+
+	.footer-nav {
+		display: inline-block;
+		float:right;
+
+}
+	
+
+	.footer-nav  li {
+		display: inline;
+		font-size: .95em;
+		color: red;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding-right: 1.5em;
+
+	}
+
+	.footer-nav a {
+		color: black;
+		font-weight: 600
+	}
+
+
+	#footer-title {
+		margin-top: 0;
+	}
 	
 }
 
+@media (min-width:1020px) {
+	.portfolio-section {
+		width: 30%;
+		display: inline-block;
+		margin: 1em;
+	}
 
-
-/* Float Clearfix ------------------ */
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
+.main-header, 
+.primary-conent,
+footer {
+	max-width: 1200px;
 }
+
+.profile-d {
+	float:left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.name, 
+.main-nav {
+	display: inline-block;
+	width: 70%;
+	vertical-align: top;
+} 
+
+.name {
+	float: left;
+	width: 30%;
+
+}
+.main-nav{
+	float: right;
+	width: 30%;
+}
+
+
+.name {
+	text-align: left;
+	margin: 0;
+	padding-left: 0;
+
+}
+
+
+
+}
+
+
+
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
