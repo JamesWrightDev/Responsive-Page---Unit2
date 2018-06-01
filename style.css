@@ -5,6 +5,7 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
+	padding:0;
 }
 body {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
@@ -77,6 +78,10 @@ h1 {
 	color: black;
 }
 
+h3 {
+	font-size: 1.5em;
+	
+}
 
 
 
@@ -127,6 +132,7 @@ img {
 	width: 90%;
 	margin: 0 auto;
 	text-align: center;
+	padding-bottom: 30px;
 }
 .secondary-content {
 	text-align: center;
@@ -142,17 +148,25 @@ footer {
 .skills-content {
 	text-align: center;
 	margin-bottom: 30px;
-	border: solid 2px darkgrey;
+	border-top: solid 1px darkgrey;
 	width: 80%;
 	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
 
 }
 
+ul .skills-list {
+	padding-left: none;
+		list-style-type: none;
+}
 .skill-list li {
 	padding-bottom: 10px;
 	padding-top: 10px;
 	list-style-type: none;
 	list-style: none;
+	text-align: center;
+	font-weight: 600;
 }
 
 /* ================================= 
@@ -251,7 +265,15 @@ footer {
 	.main-nav {
 		float: right;
 		width: 40%;
+		text-align: right;
+		padding-right: 0;
 	}
+
+	.main-nav li {
+		padding-right;
+	}
+
+	
 	.name {
 		text-align: left;
 		margin: 0;
