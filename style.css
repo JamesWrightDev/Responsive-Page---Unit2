@@ -1,7 +1,4 @@
-/* ================================= 
-  Base Element Styles
-==================================== */
-
+/* =================================Base Element Styles==================================== */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -39,28 +36,24 @@ body {
 }
 a {
 	text-decoration: none;
-
 }
+
+
+
 
 li a:hover {
-color: darkgrey;
-border-bottom: solid 2px darkgrey;
-
+	color: darkgrey;
+	border-bottom: solid 2px darkgrey;
+	box-shadow: 
 }
-
-
-
 h1 {
 	font-family: 'Roboto',arial, sans-serif;
 	font-weight: 100;
 }
-
-
 .footer-title a {
 	color: black;
 }
 /* ---- Footer Styles ---- */
-
 .secondary-content {
 	background-color: #f4f4f4;
 	padding: 5em 0;
@@ -77,23 +70,18 @@ h1 {
 	float: right;
 	color: black;
 }
-
 h3 {
 	font-size: 1.5em;
-	
 }
-
-
-
 .footer-nav {
 	display: none
 }
-/* ================================= 
-  Base layouts Layouts
-==================================== */
 
+#backtotop a {
+	color: black;
+}
+/* =================================Base layouts Layouts==================================== */
 /* ---- Navigation ---- */
-
 .name {
 	margin: 0;
 }
@@ -111,7 +99,6 @@ img {
 	max-width: 99%;
 }
 /* ---- Layout Containers ---- */
-
 .profile-d {
 	margin: 0 1em 0;
 }
@@ -144,7 +131,6 @@ footer {
 	border-top: solid 1px darkgrey;
 	padding-top: 30px;
 }
-
 .skills-content {
 	text-align: center;
 	margin-bottom: 30px;
@@ -153,12 +139,10 @@ footer {
 	margin: 0 auto;
 	padding-top: 30px;
 	padding-bottom: 30px;
-
 }
-
 ul .skills-list {
 	padding-left: none;
-		list-style-type: none;
+	list-style-type: none;
 }
 .skill-list li {
 	padding-bottom: 10px;
@@ -168,11 +152,7 @@ ul .skills-list {
 	text-align: center;
 	font-weight: 600;
 }
-
-/* ================================= 
-  Media Queries
-==================================== */
-
+/* =================================Media Queries==================================== */
 @media (min-width:768px) {
 	.main-nav li {
 		display: inline-block;
@@ -215,7 +195,7 @@ ul .skills-list {
 	}
 	.footer-title {
 		margin-top
-	}
+}
 	.footer-nav {
 		display: inline-block;
 		float: right;
@@ -231,10 +211,19 @@ ul .skills-list {
 	.footer-nav a {
 		color: black;
 		font-weight: 600
-	}
+}
 	#footer-title {
 		margin-top: 0;
 	}
+
+	.main-nav li:hover{
+		color: darkgrey;
+		border-bottom: solid 2px darkgrey;
+		padding-bottom: 0;
+	}
+
+
+
 }
 @media (min-width:1020px) {
 	.portfolio-section {
@@ -268,12 +257,9 @@ ul .skills-list {
 		text-align: right;
 		padding-right: 0;
 	}
-
 	.main-nav li {
 		padding-right;
 	}
-
-	
 	.name {
 		text-align: left;
 		margin: 0;
