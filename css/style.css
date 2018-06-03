@@ -134,7 +134,7 @@ footer {
 	padding-bottom: 30px;
 }
 ul .skills-list {
-	padding-left: none;
+	padding-left: 0;
 	list-style-type: none;
 }
 .skill-list li {
@@ -186,9 +186,7 @@ ul .skills-list {
 		width: 80%;
 		margin: 0 auto;
 	}
-	.footer-title {
-		margin-top
-}
+	
 	.footer-nav {
 		display: inline-block;
 		float: right;
@@ -250,9 +248,7 @@ ul .skills-list {
 		text-align: right;
 		padding-right: 0;
 	}
-	.main-nav li {
-		padding-right;
-	}
+	
 	.name {
 		text-align: left;
 		margin: 0;
